@@ -123,6 +123,9 @@ app.get("/addCard/:id", async (req, res) => {
  app.get("/blog_list",(req,res)=>{
     res.render("blog_list");  
  })
+ app.get("/contact",(req,res)=>{
+    res.render("contact");  
+ })
 
 app.get("/addCard", (req, res) => {
     res.render("addCard");

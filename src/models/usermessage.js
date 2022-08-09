@@ -16,21 +16,22 @@ const validator = require("validator");
              }
          }
      },
-     phone: {
-         type: Number,
+     subject: {
+         type: String,
          required: true,
-         min: 10
-     },
+         minLength: 5
+        
+    },
      message: {
          type: String,
          required: true,
-         minLength: 3
+         minLength:20
      }  
  });
 
 
  //we need a collection
 
- const User = mongoose.model("User",userSchema);
+ const User = mongoose.model("contactus",userSchema);
 
  module.exports = User;
